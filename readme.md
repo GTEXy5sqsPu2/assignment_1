@@ -14,4 +14,4 @@ This means i have had very little time to progress, But i do work IT everyday.
 
 # Links
 [Repository](<https://github.com/GTEXy5sqsPu2/assignment_1>)
-[Deployment](<>)
+[Deployment](<https://gtexy5sqspu2.github.io/assignment_1/>)
