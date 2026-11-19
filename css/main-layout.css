@@ -1,0 +1,220 @@
+/*
+Generic Layout for both pages.
+
+Layout:
+    Header
+        Nav
+            Logo | redirects home
+            User | avatar & name
+    Nav          
+        Breadcrumbs
+    Main
+    Footer
+        3 columns
+        img | links | disclaimer
+*/
+
+/* Colors */
+:root {
+     /* Backgrounds */
+    --base-100: #ffffff;
+    --base-200: #f5f7fa;
+    --base-300: #e8edf3;
+    --base-content: #091a35;
+
+    /* Brand colors */
+    --color-primary: #ff7518;
+    --color-primary-text: #ffffff;
+
+    --color-secondary: #168ff5;
+    --color-secondary-text: #ffffff;
+
+    --color-accent: #08a34a;
+    --color-accent-text: #ffffff;
+}
+
+/* Font */
+@font-face{
+    font-family: 'Montserrat';
+    src: url('/assignment_1/assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Reduce browser default styles, and append my own */
+* {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    text-decoration-line: none;
+
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: inherit;
+    color: inherit;
+}
+
+/* keep body centered*/
+html {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--base-100);
+    color: var(--base-content);
+}
+
+/* Body should become like A4 
+To simplify printing and such.
+Also min height to keep the footer at the bottom of the screen.
+*/
+body {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--base-200);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main nav bar */
+body > header > nav {
+    width: 100%;
+    min-height: 60px;
+    height: max-content;
+
+    background-color: var(--base-300);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+body > header > nav > div {
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+body > header > nav > div > img {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+}
+
+body > header > nav > * {
+    margin: 16px;
+}
+
+/* Breadcrumbs */
+body > div > nav > ol {
+    width: 100%;
+    height: 32px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+body > div > nav > ol > li {
+    width: fit-content;
+    height: fit-content;
+
+    text-wrap: nowrap;
+}
+
+body > div > nav > ol > li::before {
+    content: ">";
+    margin: 0 16px 0 16px;
+}
+
+/* main content */
+body > main {
+    margin: 32px 16px 32px 16px;
+}
+
+body > main > * {
+    width: auto;
+
+    background-color: var(--base-300);
+}
+
+/* footer */
+body > footer {
+    width: 100%;
+    height: fit-content;
+
+    margin: auto 0 0 0;
+    background-color: var(--base-300);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body > footer > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body > footer > ul > li {
+    width: 100%;
+}
+
+body > footer > ul > li > a > svg {
+    width: 16px;
+    height: 16px;
+}
+
+body > footer > * {
+    width: 180px;
+    height: 180px;
+    margin: 16px;
+    padding: 16px;
+}
+
+/* Usefull basis */
+.accent {
+    background-color: var(--color-accent);
+    color: var(--color-accent-text);
+}
+
+.hover\:accent:hover {
+    background-color: var(--color-accent);
+    color: var(--color-accent-text);
+}
+
+button, input, select, textarea {
+    min-width: 200px;
+    min-height: 60px;
+    border-radius: 4px;
+
+    color: var(--base-content);
+    background-color: var(--base-100);
+
+    padding: 4px;
+
+    box-sizing: border-box;
+}
+
+label + button, label + input, label + select, label + textarea {
+    margin-top: 0px !important;
+}
+
+button:hover, input:hover, select:hover, textarea:hover {
+    background-color: var(--base-200);
+    color: var(--base-content);
+}
