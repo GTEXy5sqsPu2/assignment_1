@@ -16,6 +16,10 @@ div#product-container {
     align-items: center;
 }
 
+div#product-container > div > img {
+    width: 100%;
+}
+
 div#product-container > aside {
     padding: 16px;
 }
