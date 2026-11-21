@@ -1,0 +1,32 @@
+main > form {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    padding: 16px 8px 16px 8px;
+}
+
+.formsection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formsection > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.formsection > div > div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#ordersection > button {
+    margin-top: 20px;
+}

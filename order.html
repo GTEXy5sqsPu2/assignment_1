@@ -8,7 +8,7 @@
 
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/main-layout.css">
-    <link rel="stylesheet" href="./css/order.css"
+    <link rel="stylesheet" href="./css/order.css">
 
     <title>fortorer - Order</title>
 </head>
@@ -40,7 +40,7 @@
         <form action="/fake" method="post">
             <section>
                 <h2>Order Summary</h2>
-                <table>
+                <table class="table full-width">
                     <thead>
                         <tr>
                             <th>Product</th>
@@ -77,68 +77,101 @@
                 </table>
             </section>
             
-            <section>
+            <section class="formsection">
                 <h2>Shipping Information</h2>
-                <label for="first_name">First Name</label>
-                <input type="text" name="first_name" required>
-
-                <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" required>
-
-                <label for="address">Address</label>
-                <input type="text" name="address" required>
-
-                <label for="city">City</label>
-                <input type="text" name="city" required>
-
-                <label for="state">State/Province</label>
-                <input type="text" name="state" required>
-
-                <label for="zip">ZIP/Postal Code</label>
-                <input type="text" name="zip" required>
-
-                <label for="country">Country</label>
-                <input type="text" name="country" required>
+                <div>
+                    <div>
+                        <label for="first_name">First Name</label>
+                        <input autocomplete="given-name" type="text" name="first_name" required>
+                    </div>
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input autocomplete="family-name" type="text" name="last_name" required>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div>
+                        <label for="address">Address</label>
+                        <input autocomplete="address-line1" type="text" name="address" required>
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input autocomplete="address-level2" type="text" name="city" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="state">State/Province</label>
+                        <input autocomplete="address-level1" type="text" name="state" required>
+                    </div>
+                    <div>
+                        <label for="zip">ZIP/Postal Code</label>
+                        <input autocomplete="postal-code" type="text" name="zip" required>
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <input autocomplete="country" type="text" name="country" required>
+                    </div>
+                </div>
             </section>
 
-            <section>
+            <section class="formsection">
                 <h2>Payment Information</h2>
-                <label for="card_number">Card Number</label>
-                <input type="text" name="card_number" required>
-
-                <label for="expiration">Expiration Date</label>
-                <input type="text" name="expiration" placeholder="MM/YY" required>
-
-                <label for="cvv">CVV</label>
-                <input type="text" name="cvv" required>
+                <div>
+                    <div>
+                        <label for="card_number">Card Number</label>
+                        <input autocomplete="cc-number" type="text" name="card_number" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="expiration">Expiration Date</label>
+                        <input autocomplete="cc-exp" type="text" name="expiration" placeholder="MM/YY" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input autocomplete="cc-csc" type="text" name="cvv" required>
+                    </div>
+                </div>
             </section>
 
-            <section>
+            <section class="formsection">
                 <h2>Billing Address</h2>
-
-                <label for="same_as_shipping">Same as shipping address</label>
-                <input type="checkbox" id="same_as_shipping" name="same_as_shipping" checked>
-
-                <label for="billing_address">Address</label>
-                <input type="text" name="billing_address" disabled>
-
-                <label for="billing_city">City</label>
-                <input type="text" name="billing_city" disabled>
-
-                <label for="billing_state">State/Province</label>
-                <input type="text" name="billing_state" disabled>
-
-                <label for="billing_zip">ZIP/Postal Code</label>
-                <input type="text" name="billing_zip" disabled>
-
-                <label for="billing_country">Country</label>
-                <input type="text" name="billing_country" disabled>
+                <div>
+                    <label for="same_as_shipping">Same as shipping address</label>
+                    <input type="checkbox" id="same_as_shipping" name="same_as_shipping" checked>
+                </div>
+                <div>
+                    <div>
+                        <label for="billing_address">Address</label>
+                        <input type="text" name="billing_address" disabled>
+                    </div>
+                    <div>
+                        <label for="billing_city">City</label>
+                        <input type="text" name="billing_city" disabled>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="billing_state">State/Province</label>                    
+                        <input type="text" name="billing_state" disabled>
+                    </div>
+                    <div>
+                        <label for="billing_zip">ZIP/Postal Code</label>
+                        <input type="text" name="billing_zip" disabled>
+                    </div>
+                    <div>
+                        <label for="billing_country">Country</label>
+                        <input type="text" name="billing_country" disabled>
+                    </div>
+                </div>
             </section>
 
-            <section>
+            <section id="ordersection">
                 <h2>Terms and Conditions</h2>
                 <p>By placing this order, you agree to our <a href="/fake">Terms and Conditions</a>.</p>
-                <button type="submit">Place Order</button>
+                <button type="submit" class="accent">Place Order</button>
             </section>
         </form>
     </main>
