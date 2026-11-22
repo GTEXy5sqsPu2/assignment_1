@@ -36,7 +36,7 @@ Layout:
 /* Font */
 @font-face{
     font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
 /* Reduce browser default styles, and append my own */
