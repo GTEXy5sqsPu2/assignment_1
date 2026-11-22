@@ -3,15 +3,16 @@
 # Description
 Simple Website with 2 pages.
 
-Product page.
-Order page.
+- Product Page
+- Order Page
 
-Kinda like an web store.
+The is a simple site containing cosmetic products.
 
-# Note
-I only noticed that i had this assignment on late **Wednesday the 21**.
-This means i have had very little time to progress, But i do work IT everyday.
+# Disclaimer
+This is a school project, no products are real.
+
 
 # Links
-[Repository](<https://github.com/GTEXy5sqsPu2/assignment_1>)
-[Deployment](<https://gtexy5sqspu2.github.io/assignment_1/>)
+
+- [Repository](<https://github.com/GTEXy5sqsPu2/assignment_1>)
+- [Deployment](<https://gtexy5sqspu2.github.io/assignment_1/>)
