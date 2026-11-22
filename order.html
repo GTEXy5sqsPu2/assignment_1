@@ -16,7 +16,7 @@
 <body>
     <header>
         <nav>
-            <a href="/">
+            <a href="./">
                 <h1>fortorer</h1>
             </a>
 
@@ -30,7 +30,7 @@
     <div>
         <nav>
             <ol>
-                <li><a href="/">Home</a></li>
+                <li><a href="./">Home</a></li>
                 <li><a>Order</a></li>
             </ol>
         </nav>
@@ -107,7 +107,7 @@
                     </div>
                     <div>
                         <label for="zip">ZIP/Postal Code</label>
-                        <input autocomplete="postal-code" type="text" name="zip" required>
+                        <input autocomplete="postal-code" type="number" name="zip" required>
                     </div>
                     <div>
                         <label for="country">Country</label>
@@ -121,17 +121,17 @@
                 <div>
                     <div>
                         <label for="card_number">Card Number</label>
-                        <input autocomplete="cc-number" type="text" name="card_number" required>
+                        <input autocomplete="cc-number" type="number" name="card_number" required>
                     </div>
                 </div>
                 <div>
                     <div>
                         <label for="expiration">Expiration Date</label>
-                        <input autocomplete="cc-exp" type="text" name="expiration" placeholder="MM/YY" required>
+                        <input autocomplete="cc-exp" type="month" name="expiration" placeholder="MM/YY" required>
                     </div>
                     <div>
                         <label for="cvv">CVV</label>
-                        <input autocomplete="cc-csc" type="text" name="cvv" required>
+                        <input autocomplete="cc-csc" type="number" name="cvv" required>
                     </div>
                 </div>
             </section>
@@ -159,7 +159,7 @@
                     </div>
                     <div>
                         <label for="billing_zip">ZIP/Postal Code</label>
-                        <input type="text" name="billing_zip" disabled>
+                        <input type="number" name="billing_zip" disabled>
                     </div>
                     <div>
                         <label for="billing_country">Country</label>
