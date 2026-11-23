@@ -30,3 +30,9 @@ main > form {
 #ordersection > button {
     margin-top: 20px;
 }
+
+#ordersection a {
+    text-decoration: underline;
+    color: var(--color-secondary);
+    font-weight: 600;
+}
